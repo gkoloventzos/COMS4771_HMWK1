@@ -15,7 +15,7 @@ function [err,model,errT] = multireg(x,y,l,xT,yT)
 %
 %
 
-model = inv(x'*x+l*eye*(size(x,2)))*x'*y;
+model = inv(x'*x+l*eye(size(x,2)))*x'*y;
 err   = (1/(2*length(x)))*sum((y-x*model).^2+(l/(2*length(x)))*norm(model).^2);
 
 if (nargin==5)
