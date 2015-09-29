@@ -1,12 +1,97 @@
 \section{Problem 1}
 
+The exercise at the beginning asks for the best degree using some empirical risk.
+Function polyreg does exactly this when 3 arguments are given.
+So for having some empirical results we will run the polyreg function
+in a variety of degrees. In general we use the degrees from 1 to 50.
+We choose this as the final plot it resembles the one in the example.
+
+So using Matlab code we do
+\begin{verbatim}
+emp_err=zeros(D,1);
+for i=1:50
+   [emp_err(i),emp_mod] = polyreg(x,y,i);
+end
+best-emp-d=find(emp_err==min(emp_err))
+\end{verbatim}
+
+This snipset of code will give us in the best-emp-d variable the 
+index of the lowest error which is the degree of the polynomial.
+The result for the empirical is that the lowest error comes with
+a 11th degree polynomial.
+
 \begin{figure}[!h]
 {
     \includegraphics[width=\columnwidth]
-    {figures/empirical}
-    \caption{\footnotesize{\bf XXX} XXX.}
+    {figures/bestpolu}
+    \caption{\footnotesize{\bf} Data with the best polynomial.}
     \label{fig:f}
 }
 \end{figure}
 
-Ffadasx
+If we print all the empirical risks that we found we will see
+that the lowest error is with the polynomial degree 8,9,10,11
+and the ones with degrees 12,13,14,15,16 are really close.
+The errors are 0.0113 and 0.0114 respectively.
+
+So that degrees are somehow reasonable.
+
+In order to do 2-fold cross validation we split our data into 2 sets.
+I use the randperm function to create an array with the numbers from
+1 to 500. This will split the data in 2 random sets. Then we will 
+run the polyreg function 2 times one with the 1st set as training and
+the 2nd as testing and vice versa. Then we will average the 2 errors
+between these 2 runs to give us the best degree of polynomial. From
+our empirical measurement I believe that it should be between 8th and
+15th degree.
+
+\begin{verbatim}
+indx = randperm(length(x));
+xTr=zeros(length(x)/2,1);
+yTr=zeros(length(x)/2,1);
+xTe=zeros(length(x)/2,1);
+yTe=zeros(length(x)/2,1);
+cross_err_1=zeros(D,1);
+cross_err_2=zeros(D,1);
+cross_errT_1=zeros(D,1);
+cross_errT_2=zeros(D,1);
+
+for i=1:length(x)/2
+    xTr(i)=x(indx(i));
+    yTr(i)=y(indx(i));
+end
+
+for i=length(x)/2+1:length(x)
+    xTe(i)=x(indx(i));
+    yTe(i)=y(indx(i));
+end
+
+for i=1:D
+    [cross_err_1(i),cross_mod_1,cross_errT_1(i)] = polyreg(xTr,yTr,i,xTe,yTe);
+    [cross_err_2(i),cross_mod_2,cross_errT_2(i)] = polyreg(xTe,yTe,i,xTr,yTr);
+end
+
+average_errT=zeros(D,1);
+average_err=zeros(D,1);
+
+for i=1:D
+    average_err(i)=(cross_err_1(i)+cross_err_2(i))/2;
+    average_errT(i)=(cross_errT_1(i)+cross_errT_2(i))/2;
+end
+
+best_d=find(average_err==min(average_err))
+polyreg(x,y,best_d)
+
+figure(7)
+plot((1:50),average_err,(1:50),average_errT)
+title('Training and Data error')
+xlabel('Degree of Polymomial')
+ylabel('Error')
+legend('Train Data', 'Test Data')
+\end{verbatim}
+
+The result of this procedure varies. This is because the training and
+testing data differ in each run. But still at my runs, it is never lower
+than 8 or more than 15. This coincides with the empirical risk
+we already found.
+
