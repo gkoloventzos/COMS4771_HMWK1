@@ -30,6 +30,7 @@ end
 for i=1:D
     [emp_err(i),emp_mod] = polyreg(x,y,i);
 end
+emp_err
 
 best_emp_d=find(emp_err==min(emp_err))
 

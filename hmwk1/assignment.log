@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.6)  28 SEP 2015 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.6)  1 OCT 2015 01:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,25 +1000,25 @@ File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
 ))
 
 LaTeX Warning: Unused global option(s):
-    [single].
+    [single,9pt].
 
 (./assignment.aux)
 \openout1 = `assignment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1053,7 +1053,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1064,56 +1064,131 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 Normal \count register pool exhausted, switching to extended pool.
 \c@section@level=\count277
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./assignment.out) (./assignment.out)
 \@outlinefile=\write5
 \openout5 = `assignment.out'.
 
  (./problem1.tex
-<figures/empirical.pdf, id=8, 597.23125pt x 845.1575pt>
-File: figures/empirical.pdf Graphic file (type pdf)
+<figures/new.png, id=20, 562.1pt x 421.575pt>
+File: figures/new.png Graphic file (type png)
+ <use figures/new.png>
+Package pdftex.def Info: figures/new.png used on input line 14.
+(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
 
-<use figures/empirical.pdf>
-Package pdftex.def Info: figures/empirical.pdf used on input line 6.
-(pdftex.def)             Requested size: 345.0pt x 488.2186pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/new2.png, id=23, 562.1pt x 421.575pt>
+File: figures/new2.png Graphic file (type png)
+ <use figures/new2.png>
+Package pdftex.def Info: figures/new2.png used on input line 36.
+(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./problem2.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<figures/hm1_2.png, id=25, 562.1pt x 421.575pt>
+File: figures/hm1_2.png Graphic file (type png)
+ <use figures/hm1_2.png>
+Package pdftex.def Info: figures/hm1_2.png used on input line 13.
+(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./problem3.tex [1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./pro
+blem4.tex [2 <./figures/new.png (PNG copy)>]
+Overfull \hbox (124.389pt too wide) in alignment at lines 5--16
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `ref:er' on page 3 undefined on input line 19.
+
+<figures/hm1_4_217797it.png, id=49, 562.1pt x 421.575pt>
+File: figures/hm1_4_217797it.png Graphic file (type png)
+
+<use figures/hm1_4_217797it.png>
+Package pdftex.def Info: figures/hm1_4_217797it.png used on input line 23.
+(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/bin_err.png, id=50, 562.1pt x 421.575pt>
+File: figures/bin_err.png Graphic file (type png)
+ <use figures/bin_err.png>
+Package pdftex.def Info: figures/bin_err.png used on input line 32.
+(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: figures/bin_err.png Graphic file (type png)
+<use figures/bin_err.png>
+Package pdftex.def Info: figures/bin_err.png used on input line 41.
+(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
- [1
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./figures/empirical.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
+ [3 <./figures/new2.png (PNG copy)>] [4 <./figures/hm1_2.png (PNG copy)>]
+[5 <./figures/hm1_4_217797it.png (PNG copy)>] [6 <./figures/bin_err.png (PNG co
+py)>] [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
  (./assignment.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `assignment.out' has not changed.
-(rerunfilecheck)             Checksum: 1D86CF263E38A636BA6BC97ECDB8E88D;44.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
+(rerunfilecheck)             Checksum: 90AE73199322C9F6183311E370309EE5;176.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 18358 strings out of 493117
- 306312 string characters out of 6135434
- 409391 words of memory out of 5000000
- 21608 multiletter control sequences out of 15000+600000
- 5267 words of font info for 20 fonts, out of 8000000 for 9000
+ 18440 strings out of 493117
+ 307561 string characters out of 6135434
+ 415710 words of memory out of 5000000
+ 21650 multiletter control sequences out of 15000+600000
+ 7134 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,6n,92p,10413b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,12n,92p,10413b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on assignment.pdf (2 pages, 55569 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on assignment.pdf (7 pages, 186075 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 14 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
