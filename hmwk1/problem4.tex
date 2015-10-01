@@ -1,0 +1,49 @@
+\section{Problem 4}
+Here is the derivations I did in order to an easier function inside
+the gradient:
+
+\begin{eqnarray*}
+\sum_{i=1}^n \Bigl( \frac{1-y_i}{1-f(x_i;\theta)} - 
+\frac{y_i}{f(x_i;\theta)}\Bigr)f'(x_i;\theta) \Leftrightarrow
+\sum_{i=1}^n \Bigl( \frac{1-y_i}{1-g(\theta^Tx)} -
+\frac{y_i}{g(\theta^Tx)}\Bigr)g'(\theta^Tx) \Leftrightarrow \\
+\sum_{i=1}^n \Bigl( \frac{1-y_i}{1-g(\theta^Tx)} -
+\frac{y_i}{g(\theta^Tx)}\Bigr)(\theta^Tx)'(g'(\theta^Tx)) \Leftrightarrow
+\sum_{i=1}^n \Bigl( \frac{1-y_i}{1-g(\theta^Tx)} -
+\frac{y_i}{g(\theta^Tx)}\Bigr)*x*g(\theta^Tx)(1-g(\theta^Tx)) \Leftrightarrow \\
+\sum_{i=1}^n \Bigl( (1-y_i)*g(\theta^Tx) - (y_i*(1-g(\theta^Tx))*x\Bigr) \Leftrightarrow
+\sum_{i=1}^n \Bigl( (g(\theta^Tx) - y_i)x \Bigr)
+\end{eqnarray*}
+
+The Matlab files for this exercise are \texttt{logreg.m} and \texttt{hm1\_4.m}
+You can find the Desicion boundary figure \ref{fig:db}. The binary classification error \ref{fig:bce}. The empirical risk figure \ref{ref:er}.
+\begin{figure}[!h]
+{
+    \includegraphics[width=\columnwidth]
+    {figures/hm1_4_217797it.png}
+    \caption{\footnotesize{\bf}Decision Boundary}
+    \label{fig:db}
+}
+\end{figure}
+
+\begin{figure}[!h]
+{
+    \includegraphics[width=\columnwidth]
+    {figures/bin_err.png}
+    \caption{\footnotesize{\bf}Binary Classification Error}
+    \label{fig:bce}
+}
+\end{figure}
+
+\begin{figure}[!h]
+{
+    \includegraphics[width=\columnwidth]
+    {figures/bin_err.png}
+    \caption{\footnotesize{\bf}Empirical Risk}
+    \label{fig:er}
+}
+\end{figure}
+
+
+For tolerance 0.0001 and step 0.1 the algorithm needs 217797 iterations.
+
