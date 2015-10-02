@@ -40,6 +40,8 @@ least = mis_clas(length(mis_clas))
 end
 
 function plot_logistic_2d(x, y, thetas, delay, keep_all)
+% This function was created by Ioannis Spiliopoulos (is2482)
+%Fellow student also in Machine Learning Course
     hold all
     exs = x(find(y),:);
     circles = x(setdiff(1:length(y),find(y)),:);
